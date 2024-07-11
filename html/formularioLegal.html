@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Pedidos de Ramen</h1>
+
+    <form method="get" action="teste.jsp">
+
+        <p>
+
+            <label for="nome"> Nome: </label>
+            <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            <label for="email"> Email: </label>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+        <fieldset style="display: inline-block; border-radius: 10px;">
+            <legend>Tipo de Ramen</legend>
+
+            <label for="shio"> shio </label>
+            <input type="radio" name="tipo" value="shio" id="shio" checked required>
+
+            <label for="shoyu"> shoyu</label>
+            <input type="radio" name="tipo" value="shoyu" id="shoyu">
+
+            <label for="misso">misso </label>
+            <input type="radio" name="tipo" value="misso" id="misso">
+
+        </fieldset>
+        </p>
+
+        <p>
+            <label for="sabor" style=" font-size: 30px; color: indigo;"> Sabor do caldo </label>
+        <p><select name="Sabor do caldo" id="sabor">
+                <option> Porco </option>
+                <option> Frango </option>
+                <option> Porco e frango </option>
+                <option> Peixe </option>
+            </select>
+        </p>
+
+        <p>
+            <label for="topping" style="font-size: 30px; color: indigo;"> Toppings</label>
+
+        <p> <input type="checkbox" name="Ajitama (ovo)" value="sim" id="topping">Ajitama(ovo)<br></p>
+        <p> <input type="checkbox" name="Chashu" value="sim" id="topping">Chashu<br> </p>
+        <p> <input type="checkbox" name="milho" value="sim" id="topping">Milho<br></p>
+        <p><input type="checkbox" name="Nori" value="sim" id="topping">Nori<br></p>
+
+
+        </p>
+
+        <p>
+            <label for="data">Data de entrega do formulário</label>
+            <input type="date" name="dataEntrega">
+        </p>
+
+        <p>
+        <p><label for="mensagem">Sujestão:</label></p>
+        <textarea name="mensagem" id="mensagem" cols="25" rows="8"></textarea>
+        </p>
+
+
+        <p>
+            <input type="submit">
+        </p>
+
+    </form>
+
+
+</body>
+
+</html>
